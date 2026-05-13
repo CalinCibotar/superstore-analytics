@@ -198,13 +198,15 @@ st.info("""
 st.subheader("💸 Relația Discount → Profit (Plotly)")
 
 # sample pentru performanta - 10k puncte ar fi prea mult
-df_sample = df.sample(n=min(3000, len(df)), random_state=42)
+df_sample = df.sample(n=min(3000, len(df)), random_state=42).copy()
+# size trebuie sa fie strict pozitiv pentru plotly
+df_sample['size_plot'] = df_sample['Sales'].clip(lower=1)
 
 fig_scatter = px.scatter(
     df_sample,
     x='Discount', y='Profit',
     color='Category',
-    size='Sales',
+    size='size_plot',
     hover_data=['Customer Name', 'Region', 'Sub-Category'],
     title=f"Profit vs Discount (sample {len(df_sample):,} comenzi)",
     labels={'Discount': 'Discount (%)', 'Profit': 'Profit ($)'},
