@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+
+# PyCharm
+.idea/
+*.iml
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Scripturi de exploare (NU intra in proiect)
+explorare.py
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup-uri
+*_BACKUP_*
+*.bak
+*~
+
+# Documente Office temporare
+~$*.docx
+~$*.xlsx
