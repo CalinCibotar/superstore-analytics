@@ -3,6 +3,8 @@
 Aplicație interactivă de analiză a performanței comerciale pentru un retailer SUA, 
 construită cu **Streamlit** și **scikit-learn**.
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://superstore-analytics.streamlit.app)
+
 ## 📊 Funcționalități
 
 - **Filtrare interactivă** a comenzilor după regiune, segment, categorie, discount, vânzări
@@ -71,3 +73,4 @@ de pe Kaggle — 9.994 comenzi, 793 clienți unici, perioada 2014-2017.
 ## 📄 Licență
 
 MIT License
+
